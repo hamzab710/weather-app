@@ -1,0 +1,179 @@
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'BrushLetteringOneBoldItalic', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+header {
+  font-size: 3rem;
+  margin-top: 1.5rem;
+}
+
+
+#unit {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  margin-top: 4rem;
+}
+
+#search-box {
+  display: flex;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+
+.submit {
+  width: 2rem;
+}
+
+#content{
+  height: 50vh;
+  width: 30vw;
+  display: grid;
+  grid-template: 1fr 2fr 1fr 1fr / 1fr 1fr;
+  position: relative;
+  margin: auto;
+  margin-top: 3rem;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+/* #city, #sky, #time, #temp, #wind, #humidity {
+  opacity: 0;
+} */
+
+
+#city {
+  grid-area: 1 / 1 / 2 / 3;
+  font-size: 2.5rem;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+#sky {
+  grid-area: 2 / 1 / 3 / 3;
+  width: 150px;
+  align-self: center;
+  justify-self: center;
+}
+
+#time {
+  grid-area: 3 / 1 / 4 / 3;
+  font-size: 1.2rem;
+  align-self: center;
+  justify-self: center;
+}
+
+#temp {
+  align-self: center;
+  justify-self: center;
+  font-size: 5rem;
+}
+
+#wind {
+  align-self: center;
+  justify-self: center;
+  font-size: 1.3rem;
+}
+
+#humidity {
+  position: absolute;
+  right: 5%;
+  top: 25%;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #968e8e;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+#error-message {
+  margin-top: 3rem;
+  font-size: 3rem;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.1rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  text-align: center;
+}
+
+.git-icon {
+  height: 1.8rem;
+  width: auto;
+  display: inline;
+  position: relative;
+  top: 3px;
+  margin-left: 0.5rem;
+}

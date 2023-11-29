@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/brush-lettering-one" type="text/css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-container" id="backgroundContainer">
+    </div>
+    <header>Weather Report</header>
+    <div id="unit">
+        <div>Celcius</div>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+        <div>Fahrenheit</div>
+    </div>
+    <div id="search-box">
+        <input type="search" name="search">
+        <img src="icons/search-outline.svg" alt="search" class="submit">
+    </div>
+    <div id="content">
+        <div id="city"></div>
+        <img id="sky" src="#">
+        <div id="time"></div>
+        <div id="temp"></div>
+        <div id="wind">
+            <p id="speed"></p>
+            <p id="degree"></p>
+            <p id="direction"></p>
+        </div>
+        <div id="humidity"></div>
+    </div>
+    <div id="error-message"></div>
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          hamzab710
+        <a href="https://github.com/hamzab710"><img src="icons/github.svg" alt="Github Icon" class="git-icon"></a></p>
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>
